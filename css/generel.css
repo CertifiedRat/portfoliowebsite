@@ -1,0 +1,91 @@
+/**************************CSS Reset**************************/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+/***************************************************************************************/
+body {
+  background-color: #333333;
+  color: var(--color-text);
+}
+main {
+  max-width: 1200px;
+  justify-self: center;
+}
+h1.index {
+  font-size: var(--h1-size-index);
+}
+h1 {
+  font-family: var(--h1);
+  font-size: var(--h1-size);
+}
+h2 {
+  font-family: var(--h2h3);
+  font-size: var(--h2-size);
+  font-weight: 700;
+}
+h3 {
+  font-family: var(--h2h3);
+  font-size: var(--h3-size);
+  font-weight: 400;
+}
+p {
+  font-family: var(--p);
+  font-size: var(--p-size);
+  font-weight: 400;
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: cyber;
+  src: url(../fonts/CyberHorizonRegular.woff2);
+}
+@font-face {
+  font-family: barcode;
+  src: url(../fonts/LibreBarcode39ExtendedText-Regular.woff2);
+}
+@font-face {
+  font-family: subheaders;
+  src: url(../fonts/ArefRuqaa-Regular.woff2), url(../fonts/ArefRuqaa-Bold.woff2);
+}
+@font-face {
+  font-family: regulartxt;
+  src: url(../fonts/LibertinusSans-Regular.woff2), url(../fonts/LibertinusSans-Bold.woff2);
+}
+:root {
+  /********************************* Colors ************************************************/
+  --color-text: #e4e4e4;
+  --color-text-inverted: rgba(29, 27, 27, 1);
+
+  --white: rgba(228, 228, 228, 1);
+  --windowframe: rgba(56, 37, 29, 1);
+  --windowlining: rgba(102, 60, 29, 1);
+  --dark: rgba(29, 27, 27, 1);
+
+  /**************************************Fonts********************************************/
+  --h1: cyber;
+  --h2h3: subheaders;
+  --p: regulartxt;
+
+  --h1-size: 48px;
+  --h2-size: 32px;
+  --h3-size: 24px;
+  --p-size: 1rem;
+
+  --h1-size-index: 200px;
+  --h1-size-desktop: 96px;
+}
