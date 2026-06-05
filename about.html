@@ -29,9 +29,61 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <h1>About</h1>
+      <section class="aboutme">
+        <h2>Lau_R4_T?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum recusandae fugiat quia atque, minus ipsum repellat cumque ut autem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, doloribus temporibus dolores molestias quos omnis velit numquam debitis fugiat repellendus nam assumenda nihil obcaecati nulla amet libero? Placeat earum sint omnis voluptatibus sapiente doloribus asperiores provident ab cupiditate beatae?</p>
+        <div class="grid_1-1-1-1-1">
+          <img src="imgs/9-16.jpg" alt="self portrait" />
+          <img src="imgs/1-1.webp" alt="picture of me" />
+        </div>
+      </section>
+      <section class="artwork">
+        <h2>Artwork</h2>
+        <div class="slideshow-container">
+          <div class="slide-wrapper">
+            <div class="slide"><img src="imgs/16-9.jpg" alt="Slide 1" /></div>
+            <div class="slide"><img src="imgs/windowbg-l.png" alt="Slide 2" /></div>
+            <div class="slide"><img src="imgs/windowbg-s.png" alt="Slide 3" /></div>
+          </div>
+
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+          <div class="dot-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="grid_1-1">
+          <div>
+            <img src="imgs/1-1.webp" alt="" />
+            <h3>Titel</h3>
+          </div>
+          <div>
+            <img src="imgs/1-1.webp" alt="" />
+            <h3>Titel</h3>
+          </div>
+          <div>
+            <img src="imgs/1-1.webp" alt="" />
+            <h3>Titel</h3>
+          </div>
+          <div>
+            <img src="imgs/1-1.webp" alt="" />
+            <h3>Titel</h3>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
     <script src="../js/login.js"></script>
+    <script src="../js/slideshow.js"></script>
   </body>
 </html>

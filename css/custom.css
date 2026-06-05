@@ -28,12 +28,10 @@
   --h1: cyber;
   --h2h3: subheaders;
   --p: regulartxt;
+  --logo: barcode;
 
   --h1-size: 48px;
   --h2-size: 32px;
   --h3-size: 24px;
   --p-size: 1rem;
-
-  --h1-size-index: 200px;
-  --h1-size-desktop: 96px;
 }

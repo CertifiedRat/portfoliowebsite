@@ -1,0 +1,12 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}

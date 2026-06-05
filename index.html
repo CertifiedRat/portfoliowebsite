@@ -11,13 +11,29 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="headernav">
+        <button class="menuikon">
+          <span class="topline"></span>
+          <span class="bottomline"></span>
+        </button>
+        <div class="logo">
+          <a href="index.html" class="logo-text">R4_T</a>
+        </div>
+        <ul class="menu">
           <li>
             <a href="index.html">home</a>
           </li>
           <li>
-            <a href="projects.html">projects</a>
+            <div class="dropdown-menu">
+              <a href="projects.html">projects <span class="dropdown-ikon"></span></a>
+              <div class="dropdown-indhold">
+                <a href="tema2.html">Tema 2</a>
+                <a href="tema3.html">Tema 3</a>
+                <a href="tema4.html">Tema 4</a>
+                <a href="tema5.html">Tema 5</a>
+                <a href="tema6.html">Tema 6</a>
+              </div>
+            </div>
           </li>
           <li>
             <a href="about.html">about</a>
@@ -29,9 +45,51 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="indexhero">
+        <h1 class="index">Portfolio</h1>
+        <h2 class="index">Multimediedesigner</h2>
+      </div>
+      <section class="projekter">
+        <h2>Projekter</h2>
+        <div class="slideshow-container">
+          <div class="slide-wrapper">
+            <div class="slide"><img src="imgs/16-9.jpg" alt="Slide 1" /></div>
+            <div class="slide"><img src="imgs/windowbg-l.png" alt="Slide 2" /></div>
+            <div class="slide"><img src="imgs/windowbg-s.png" alt="Slide 3" /></div>
+          </div>
+
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+          <div class="dot-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+        <a href="projects.html" class="btn-design">All Projects</a>
+      </section>
+      <section class="about">
+        <div class="grid">
+          <div class="grid">
+            <h2>About</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa laboriosam nostrum, hic amet distinctio inventore asperiores eaque assumenda, eveniet eum at impedit aliquam! Vero ex facilis inventore aspernatur, libero hic aut! Debitis temporibus, saepe quibusdam laborum placeat pariatur, earum repellendus repellat itaque obcaecati nihil molestias ullam voluptatibus ducimus veritatis eaque!</p>
+            <a href="about.html" class="btn-design">About</a>
+          </div>
+          <div class="grid_1-1">
+            <img src="imgs/1-1.webp" alt="" />
+            <img src="imgs/1-1.webp" alt="" />
+            <img src="imgs/1-1.webp" alt="" />
+            <img src="imgs/1-1.webp" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
+    <script src="../js/generel.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/slideshow.js"></script>
   </body>
 </html>
