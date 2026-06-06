@@ -23,11 +23,19 @@
   --white: rgba(228, 228, 228, 1);
   --yellow: rgb(219, 162, 55);
   --windowframe: rgba(56, 37, 29, 1);
-  --windowlining: rgba(102, 60, 29, 1);
+  --windowlining: rgb(46, 24, 24);
+  --windowlining-light: rgb(124, 93, 46);
   --dark: rgba(29, 27, 27, 1);
 
   --white10: rgba(228, 228, 228, 0.1);
   --white05: rgba(228, 228, 228, 0.05);
+
+  /************ Windowframes ***********************************************/
+  --windowborder-L: 1rem solid var(--windowframe);
+  --windowborder-inner-L: 0.5rem solid var(--windowlining);
+
+  --windowborder-S: 0.5rem solid var(--windowframe);
+  --windowborder-inner-S: 0.25rem solid var(--windowlining);
 
   /**************************************Fonts********************************************/
   --h1: cyber;

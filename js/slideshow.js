@@ -5,19 +5,16 @@ let slideTimer;
 let touchStartX = 0;
 let touchEndX = 0;
 
-// Initialize the timer and mobile touch listeners
+// Initialize the mobile touch listeners
 const container = document.querySelector(".slideshow-container");
-resetTimer();
 setupTouchEvents();
 
 function changeSlide(direction) {
   showSlide((slideIndex += direction));
-  resetTimer();
 }
 
 function currentSlide(index) {
   showSlide((slideIndex = index));
-  resetTimer();
 }
 
 function showSlide(index) {
@@ -38,13 +35,6 @@ function showSlide(index) {
   if (dots[slideIndex]) {
     dots[slideIndex].classList.add("active");
   }
-}
-
-function resetTimer() {
-  clearInterval(slideTimer);
-  slideTimer = setInterval(() => {
-    changeSlide(1);
-  }, 10000);
 }
 
 // Mobile Touch Support Logic

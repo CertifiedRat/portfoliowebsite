@@ -60,12 +60,20 @@ select,
 }
 /***************************************************************************************/
 body {
-  background-color: #333333;
+  background-color: #19678b;
   color: var(--color-text);
 }
 main {
+  display: grid;
+  gap: 5rem;
   max-width: 1200px;
+  padding: 0.5rem;
   justify-self: center;
+  h2,
+  h3,
+  p {
+    margin: 1rem;
+  }
 }
 section {
   background-image: url(../imgs/windowbg-s.png);
@@ -474,4 +482,19 @@ footer {
 .dot.active,
 .dot:hover {
   background-color: #bbb;
+}
+
+/************** Sektion designs ********************************************************/
+/*  */
+section {
+  border: var(--windowborder-S);
+  border-block-width: 1rem;
+}
+.lining {
+  border: var(--windowborder-inner-S);
+  border-bottom-color: var(--windowlining-light);
+  border-right-color: var(--windowlining-light);
+}
+.border-bottom {
+  border-bottom: var(--windowborder-S);
 }
