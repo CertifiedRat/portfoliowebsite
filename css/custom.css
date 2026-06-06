@@ -17,10 +17,11 @@
 :root {
   /********************************* Colors ************************************************/
   --color-text: #e4e4e4;
-  --color-text-grey: #bdbdbd;
+  --color-text-grey: #b1b1b1;
   --color-text-inverted: rgba(29, 27, 27, 1);
 
   --white: rgba(228, 228, 228, 1);
+  --yellow: rgb(219, 162, 55);
   --windowframe: rgba(56, 37, 29, 1);
   --windowlining: rgba(102, 60, 29, 1);
   --dark: rgba(29, 27, 27, 1);
