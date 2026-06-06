@@ -247,7 +247,14 @@ header {
     content: "✖";
   }
 }
-
+/**************** Footer ****************************************************/
+footer {
+  display: block;
+  background-color: var(--dark);
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
 /******** Header & Footer i Desktopwidth **************/
 @media screen and (min-width: 800px) {
   header {
