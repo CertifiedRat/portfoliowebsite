@@ -11,19 +11,40 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="headernav">
+        <button class="menuikon">
+          <span class="topline"></span>
+          <span class="bottomline"></span>
+        </button>
+        <div class="logo">
+          <a href="index.html" class="logo-text">R4_T</a>
+        </div>
+        <ul class="menu">
           <li>
             <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="projects.html">projects</a>
           </li>
           <li>
             <a href="about.html">about</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <div id="dropdown-menu">
+              <div class="flex">
+                <a id="visiting" class="panel" href="projects.html">projects </a>
+                <div class="dropdown-ikon"></div>
+              </div>
+              <div class="dropdown-indhold">
+                <a href="tema2.html">Tema 2</a>
+                <a href="tema3.html">Tema 3</a>
+                <a href="tema4.html">Tema 4</a>
+                <a href="tema5.html">Tema 5</a>
+                <a href="tema6.html">Tema 6</a>
+              </div>
+            </div>
+          </li>
+          <li class="socialmedia">
+            <a href=""> <img src="imgs/svg/linkedin.svg" alt="linkedin" /></a>
+            <a href=""><img src="imgs/svg/instagram.svg" alt="instagram" /></a>
+            <a href=""><img src="imgs/svg/facebook.svg" alt="facebook" /></a>
           </li>
         </ul>
       </nav>

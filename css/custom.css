@@ -17,6 +17,7 @@
 :root {
   /********************************* Colors ************************************************/
   --color-text: #e4e4e4;
+  --color-text-grey: #bdbdbd;
   --color-text-inverted: rgba(29, 27, 27, 1);
 
   --white: rgba(228, 228, 228, 1);

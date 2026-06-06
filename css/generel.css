@@ -108,18 +108,25 @@ a.logo-text {
   text-decoration: none;
 }
 /************************* Header **************************************/
+#visiting {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 0.5px;
+}
 header {
   position: sticky;
   top: 0;
   height: 60px;
   background-color: var(--dark);
   z-index: 999;
-
   nav {
     display: flex;
+    max-width: 1200px;
+    width: 100%;
     height: 100%;
     align-items: center;
     justify-content: space-between;
+    justify-self: center;
   }
   .menuikon {
     height: 100%;
@@ -149,10 +156,7 @@ header {
     display: flex;
   }
   .logo {
-    width: 200px;
-    height: 100%;
-    text-align: end;
-    padding-right: 1.5rem;
+    padding-inline: 1.5rem;
   }
   /* Mobil menu Åben */
   .menuikon.menuopen .topline {
@@ -165,7 +169,7 @@ header {
   nav.menuopen .menu {
     display: grid;
     grid-template-rows: auto auto auto 1fr;
-    padding: 0 1.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem;
     position: absolute;
     top: 60px;
     height: 500px;
@@ -174,19 +178,22 @@ header {
   }
   li a {
     font-family: var(--p);
-    color: var(--color-text);
+    color: var(--color-text-grey);
     text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    padding-block: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-block: 0.7rem;
     width: 100%;
   }
   nav.menuopen .menu li a:hover {
-    font-weight: 700;
+    color: var(--color-text);
   }
   li.socialmedia {
     align-items: end;
     justify-content: end;
+    margin-right: 1.5rem;
+    gap: 0.5rem;
     a {
       width: fit-content;
     }
@@ -199,20 +206,18 @@ header {
       margin-inline: 4px;
     }
   }
-  /* nav.menuopen li.socialmedia .flex {
-    display: flex;
-    height: 100%;
-  } */
+
   /*********/
   /* Dropdown menuen */
   #dropdown-menu {
     cursor: pointer;
     width: 100%;
     a.panel {
-      width: 100px;
+      width: 110px;
+      color: #dba237;
     }
     .dropdown-indhold a {
-      font-size: 20px;
+      font-size: 18px;
       padding-block: 0.4rem;
       padding-left: 0.5rem;
       background-color: var(--white05);
@@ -233,11 +238,59 @@ header {
     display: block;
     width: 100%;
     content: "▼";
+    color: #dba237;
     transition: 0.3s ease-out;
   }
   .dropdown-open.dropdown-ikon:after,
   #dropdown-menu:hover .dropdown-ikon:after {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
+    content: "✖";
+  }
+}
+
+/******** Header & Footer i Desktopwidth **************/
+@media screen and (min-width: 800px) {
+  header {
+    .menuikon {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      position: relative;
+      top: 0;
+      right: 0;
+      height: 60px;
+      gap: 2rem;
+    }
+    .menu li a,
+    a.panel {
+      align-content: center;
+      padding-inline: 0.5rem;
+    }
+    .menu li a:hover,
+    #dropdown-menu a:hover {
+      color: var(--color-text);
+    }
+    #dropdown-menu {
+      width: 200px;
+      align-content: center;
+    }
+    #dropdown-menu a {
+      font-weight: 400;
+    }
+    #dropdown-menu .flex {
+      width: 125px;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+    }
+    .dropdown-indhold {
+      padding: 0 0.5rem 0.5rem;
+      background-color: var(--dark);
+    }
+    li.socialmedia {
+      display: none;
+    }
   }
 }
 /********************* Slideshow *********************************************/
