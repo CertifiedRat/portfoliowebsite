@@ -72,7 +72,8 @@ main {
   h2,
   h3,
   p {
-    margin: 1rem;
+    padding-inline: 1rem;
+    margin-block: 1rem;
   }
 }
 section {
@@ -93,6 +94,7 @@ h1 {
   font-family: var(--h1);
   font-size: var(--h1-size);
   text-transform: uppercase;
+  text-align: center;
 }
 h2 {
   font-family: var(--h2h3);
@@ -409,21 +411,22 @@ footer {
 }
 /********************* Slideshow *********************************************/
 
+/* Lines all slides up side-by-side in a single row */
 .slideshow-container {
   max-width: 800px;
   position: relative;
   margin: auto;
-  overflow: hidden; /* Hides the slides that aren't active */
+  overflow: hidden; /* Hides the slides outside the box */
 }
 
-/* Lines all slides up side-by-side in a single row */
+/* Lines all slides up side-by-side */
 .slide-wrapper {
   display: flex;
   width: 100%;
-  transition: transform 0.5s ease-in-out; /* Handles the smooth sliding speed */
+  transition: transform 0.5s ease-in-out; /* Controls slide animation speed */
 }
 
-/* Ensures each slide takes up exactly 100% of the container width */
+/* Forces each slide to match the container width */
 .slide {
   min-width: 100%;
 }
@@ -432,8 +435,6 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-  user-select: none; /* Prevents text/image selection highlights */
-  -webkit-user-drag: none; /* Prevents Safari image dragging glitch */
 }
 
 /* Navigation Buttons */
@@ -465,7 +466,7 @@ footer {
 /* Dots Layout */
 .dot-container {
   text-align: center;
-  padding: 0.5rem 1rem 1rem;
+  padding: 0.5rem;
 }
 
 .dot {
@@ -473,7 +474,7 @@ footer {
   height: 8px;
   width: 8px;
   margin: 0 5px;
-  background-color: #717171;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -481,7 +482,7 @@ footer {
 
 .dot.active,
 .dot:hover {
-  background-color: #bbb;
+  background-color: rgb(228, 228, 228);
 }
 
 /************** Sektion designs ********************************************************/

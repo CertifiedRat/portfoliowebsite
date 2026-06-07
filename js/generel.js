@@ -7,7 +7,7 @@ function menuClicked() {
   nav.classList.toggle("menuopen");
 }
 
-//dropdown menuen, så den vises både ved hover(css) og click så den kan bruges i mobil.
+//dropdown menuen, så den vises både ved hover(vha. css) og click så den kan bruges i mobil.
 const ikon = document.querySelector(".dropdown-ikon");
 const indhold = document.querySelector(".dropdown-indhold");
 const dropdown = document.querySelector("#dropdown-menu");
