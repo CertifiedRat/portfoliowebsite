@@ -7,31 +7,97 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <title>Document</title>
+    <title>Projekter</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="headernav">
+        <button class="menuikon">
+          <span class="topline"></span>
+          <span class="bottomline"></span>
+        </button>
+        <div class="logo">
+          <a href="index.html" class="logo-text">R4_T</a>
+        </div>
+        <ul class="menu">
           <li>
             <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="projects.html">projects</a>
           </li>
           <li>
             <a href="about.html">about</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <div id="dropdown-menu">
+              <div class="flex">
+                <a id="visiting" class="panel" href="projects.html">projects </a>
+                <div class="dropdown-ikon"></div>
+              </div>
+              <div class="dropdown-indhold">
+                <a href="tema2.html">Tema 2</a>
+                <a href="tema3.html">Tema 3</a>
+                <a href="tema4.html">Tema 4</a>
+                <a href="tema5.html">Tema 5</a>
+                <a href="tema6.html">Tema 6</a>
+              </div>
+            </div>
+          </li>
+          <li class="socialmedia">
+            <a href=""> <img src="imgs/svg/linkedin.svg" alt="linkedin" /></a>
+            <a href=""><img src="imgs/svg/instagram.svg" alt="instagram" /></a>
+            <a href=""><img src="imgs/svg/facebook.svg" alt="facebook" /></a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <h1>Projekter</h1>
+      <div class="outside">
+        <h2>Temaerne på 1. Semester</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis alias vel, illum dicta rerum beatae qui, explicabo numquam recusandae delectus esse quas est velit quasi porro nisi officia omnis sint voluptate nihil deleniti ducimus ipsam facere dolor. Quae ab perspiciatis sit consectetur error consequatur adipisci, molestiae iure odio, voluptate laudantium!</p>
+      </div>
+      <section>
+        <div class="grid desktop_1-1">
+          <a href="tema2.html" class="tema-nav border-bottom">
+            <div class="tema-box lining"><img src="imgs/16-9.jpg" alt="tema 2" /></div>
+          </a>
+          <a href="tema3.html" class="tema-nav border-bottom">
+            <div class="tema-box lining"><img src="imgs/16-9.jpg" alt="tema 3" /></div>
+          </a>
+          <a href="tema4.html" class="tema-nav border-bottom">
+            <div class="tema-box lining"><img src="imgs/16-9.jpg" alt="tema 4" /></div>
+          </a>
+          <a href="tema5.html" class="tema-nav border-bottom">
+            <div class="tema-box lining"><img src="imgs/16-9.jpg" alt="tema 5" /></div>
+          </a>
+          <a href="tema6.html" class="tema-nav desktop_span2">
+            <div class="tema-box lining"><img src="imgs/16-9.jpg" alt="tema 6" /></div>
+          </a>
+        </div>
+      </section>
+    </main>
 
-    <footer></footer>
+    <footer>
+      <div class="grid_footer">
+        <div class="logo">
+          <a href="index.html" class="logo-text">R4_T</a>
+        </div>
+        <div class="socialmedia">
+          <a href=""> <img src="imgs/svg/linkedin.svg" alt="linkedin" /></a>
+          <a href=""><img src="imgs/svg/instagram.svg" alt="instagram" /></a>
+          <a href=""><img src="imgs/svg/facebook.svg" alt="facebook" /></a>
+        </div>
+        <nav>
+          <ul class="footernav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="projects" href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+        <p class="name">L4u_R4_T 🟄 2026</p>
+      </div>
+    </footer>
+    <script src="../js/generel.js"></script>
     <script src="../js/login.js"></script>
   </body>
 </html>

@@ -11,27 +11,129 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="headernav">
+        <button class="menuikon" aria-label="open mobile menu">
+          <span class="topline"></span>
+          <span class="bottomline"></span>
+        </button>
+        <div class="logo">
+          <a href="index.html" class="logo-text">R4_T</a>
+        </div>
+        <ul class="menu">
           <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="projects.html">projects</a>
+            <a id="visiting" href="index.html">home</a>
           </li>
           <li>
             <a href="about.html">about</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <div id="dropdown-menu">
+              <div class="flex">
+                <a class="panel" href="projects.html">projects </a>
+                <div class="dropdown-ikon"></div>
+              </div>
+              <div class="dropdown-indhold">
+                <a href="tema2.html">Tema 2</a>
+                <a href="tema3.html">Tema 3</a>
+                <a href="tema4.html">Tema 4</a>
+                <a href="tema5.html">Tema 5</a>
+                <a href="tema6.html">Tema 6</a>
+              </div>
+            </div>
+          </li>
+          <li class="socialmedia">
+            <a href=""> <img src="imgs/svg/linkedin.svg" alt="linkedin" /></a>
+            <a href=""><img src="imgs/svg/instagram.svg" alt="instagram" /></a>
+            <a href=""><img src="imgs/svg/facebook.svg" alt="facebook" /></a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main id="index">
+      <div class="indexhero">
+        <h1 class="index">Portfolio</h1>
+        <h2 class="index">Multimediedesigner</h2>
+      </div>
+      <section class="projekter">
+        <div class="grid lining">
+          <h2>Projekter</h2>
+          <div class="slideshow-container">
+            <!-- Wrapper for sliding side-by-side -->
+            <div class="slide-wrapper">
+              <div class="slide">
+                <a href="tema2.html"><img src="imgs/16-9.jpg" alt="Slide 1, Tema 2" /></a>
+              </div>
+              <div class="slide">
+                <a href="tema3.html"><img src="imgs/16-9.jpg" alt="Slide 2, Tema 3" /></a>
+              </div>
+              <div class="slide">
+                <a href="tema4.html"><img src="imgs/16-9.jpg" alt="Slide 3, Tema 4" /></a>
+              </div>
+              <div class="slide">
+                <a href="tema5.html"><img src="imgs/16-9.jpg" alt="Slide 4, Tema 5" /></a>
+              </div>
+              <div class="slide">
+                <a href="tema6.html"><img src="imgs/16-9.jpg" alt="Slide 5, Tema 6" /></a>
+              </div>
+            </div>
 
-    <footer></footer>
+            <!-- Next/Prev Buttons -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+
+          <!-- Indicator Dots -->
+          <div class="dot-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+
+          <a href="projects.html" class="btn-design">All Projects</a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="grid">
+          <div class="grid s-lining">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, blanditiis! Eveniet saepe placeat, ut, ducimus tempore, culpa repudiandae necessitatibus eos laborum tempora cum obcaecati exercitationem.</p>
+            <a href="about.html" class="btn-design">About</a>
+          </div>
+          <div class="grid_1-1 desktop_flex">
+            <img class="lining" src="imgs/1-1.webp" alt="" />
+            <img class="lining" src="imgs/1-1.webp" alt="" />
+            <img class="lining" src="imgs/1-1.webp" alt="" />
+            <img class="lining" src="imgs/1-1.webp" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="grid_footer">
+        <div class="logo">
+          <a href="index.html" class="logo-text">R4_T</a>
+        </div>
+        <div class="socialmedia">
+          <a href=""> <img src="imgs/svg/linkedin.svg" alt="linkedin" /></a>
+          <a href=""><img src="imgs/svg/instagram.svg" alt="instagram" /></a>
+          <a href=""><img src="imgs/svg/facebook.svg" alt="facebook" /></a>
+        </div>
+        <nav>
+          <ul class="footernav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="projects" href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+        <p class="name">L4u_R4_T 🟄 2026</p>
+      </div>
+    </footer>
+    <script src="../js/generel.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/slideshow.js"></script>
   </body>
 </html>
