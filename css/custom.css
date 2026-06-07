@@ -31,15 +31,15 @@
   --white05: rgba(228, 228, 228, 0.05);
 
   /************ Windowframes ***********************************************/
-  --windowborder-L: 1rem solid var(--windowframe);
-  --windowborder-inner-L: 0.5rem solid var(--windowlining);
+  --windowborder-L: 10px solid var(--windowframe);
+  --windowborder-inner-L: 6px solid var(--windowlining);
 
-  --windowborder-S: 0.5rem solid var(--windowframe);
-  --windowborder-inner-S: 0.25rem solid var(--windowlining);
+  --windowborder-S: 6px solid var(--windowframe);
+  --windowborder-inner-S: 4px solid var(--windowlining);
 
   /**************************************Fonts********************************************/
   --h1: cyber;
-  --h2h3: subheaders;
+  --h2h3: regulartxt;
   --p: regulartxt;
   --logo: barcode;
 
