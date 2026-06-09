@@ -131,35 +131,4 @@
       grid-column: 1/3;
     }
   }
-  /* Project pages */
-  .desktop_2-1-2-4 {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 4fr;
-  }
-  .desktop_4-2-1-2 {
-    display: grid;
-    grid-template-columns: 4fr 2fr 1fr 2fr;
-  }
-
-  section.tema-sektion {
-    border: none;
-    background: none;
-  }
-
-  .tema-frame,
-  .tema-frame-inverted {
-    background-image: url(../imgs/windowbg-s.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: min-content;
-    align-self: center;
-  }
-  .tema-frame {
-    grid-column: 4/5;
-    grid-row: 1/-1;
-  }
-  .tema-frame-inverted {
-    order: -1;
-    grid-row: 1/-1;
-  }
 }

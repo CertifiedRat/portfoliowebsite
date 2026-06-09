@@ -30,6 +30,8 @@
   --white10: rgba(228, 228, 228, 0.1);
   --white05: rgba(228, 228, 228, 0.05);
 
+  --img-bg: rgba(29, 27, 27, 0.8);
+
   /************ Windowframes ***********************************************/
   --windowborder-L: 10px solid var(--windowframe);
   --windowborder-inner-L: 6px solid var(--windowlining);

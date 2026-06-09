@@ -409,28 +409,39 @@ footer {
 
 /* Lines all slides up side-by-side in a single row */
 .slideshow-container {
-  max-width: 800px;
   position: relative;
+  max-width: 1000px;
   margin: auto;
+  margin-top: 1rem;
   overflow: hidden; /* Hides the slides outside the box */
 }
 
 /* Lines all slides up side-by-side */
 .slide-wrapper {
   display: flex;
-  width: 100%;
   transition: transform 0.5s ease-in-out; /* Controls slide animation speed */
 }
 
 /* Forces each slide to match the container width */
 .slide {
+  position: relative;
   min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-content: center;
+  padding-block: 1.5rem;
 }
 
 .slide img {
-  width: 100%;
-  height: auto;
+  object-fit: contain;
+  max-height: 450px;
   display: block;
+}
+.art-text {
+  position: absolute;
+  place-self: center;
+  color: var(--color-text-grey);
+  bottom: 0;
+  margin: 0;
 }
 
 /* Navigation Buttons */
@@ -441,17 +452,20 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   padding: 16px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-text);
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
-  font-size: 18px;
+  font-size: 24px;
   border-radius: 0 3px 3px 0;
   z-index: 10;
 }
 
 .next {
-  right: 0;
+  right: 8px;
   border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 8px;
 }
 
 .prev:hover,
@@ -511,6 +525,7 @@ section {
 /**************************** Index styling************************************************/
 section.projekter h2 {
   text-align: center;
+  margin-bottom: 0;
 }
 .desktop_flex {
   border-top: var(--windowborder-S);
@@ -519,13 +534,8 @@ section.projekter h2 {
   }
 }
 /**************************** About Styling ************************************************/
-
-.art-text {
+.art-title {
   text-align: center;
-}
-p.art-text {
-  padding: 0;
-  margin: 0;
 }
 section.skills {
   text-align: center;
@@ -550,6 +560,9 @@ section.skills {
 .skills h2.sudoku {
   font-size: 28px;
   padding-bottom: 1rem;
+}
+.img-bg {
+  background-color: var(--img-bg);
 }
 /**************************** Projects Styling ************************************************/
 
@@ -587,3 +600,31 @@ a.tema-link2:hover {
 .intro p {
   max-width: 75ch;
 }
+.tema-img-btn {
+  border: none;
+  cursor: zoom-in;
+}
+.btn-border {
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.figma {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+p.yellow {
+  color: var(--yellow);
+}
+.tema-punkter {
+  list-style: none;
+}
+/* [popover] {
+}
+:popover-open {
+}
+::backdrop {
+} */
