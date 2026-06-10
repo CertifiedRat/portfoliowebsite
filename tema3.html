@@ -38,7 +38,6 @@
                 <a id="visiting" href="tema3.html">Tema 3</a>
                 <a href="tema4.html">Tema 4</a>
                 <a href="tema5.html">Tema 5</a>
-                <a href="tema6.html">Tema 6</a>
               </div>
             </div>
           </li>
@@ -51,6 +50,8 @@
       </nav>
     </header>
 
+    <canvas id="canvas"></canvas>
+    <div class="background"></div>
     <main>
       <div class="tema-slide">
         <a href="tema2.html" class="prev-tema">&#10094;</a>
@@ -59,53 +60,79 @@
       </div>
       <div class="intro">
         <h2>Grund&shy;læggende UX/UI</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate reprehenderit repellendus sint dolor nulla iusto, obcaecati illum necessitatibus soluta harum quia ducimus doloribus laudantium, earum velit quis nisi dolores? Perferendis nesciunt nulla doloremque excepturi, nam sequi incidunt consequuntur, dolorum minima, cum fugit dolorem id nisi perspiciatis explicabo ipsa vel!</p>
+        <p>I dette fire ugers tema dykkede vi ned i disciplinen User Experience Design (UX) og User Interface Design (UI).</p>
         <p>Er du ikke interesseret i en gennemgang af temaet, kan du gå direkte til mit færdige website <a href="https://certifiedrat.github.io/emnesite_hvilken_lemur_er_du/" class="tema-link">her</a></p>
       </div>
       <section class="process tema-sektion">
-        <div class="grid desktop_2-1-2-4 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
-          <div class="tema-frame">
-            <div class="tema-txt">
-              <h2>Processen</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-            </div>
+        <div id="tema3_1" class="grid_5fr">
+          <button class="tema-img-btn img-1 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img1" src="imgs/tema3/moodboard.webp" alt="moodboard" />
+          </button>
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img2" src="imgs/tema3/mail.webp" alt="mail screenshot" />
+          </button>
+          <button class="tema-img-btn img-3 btn-border" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img3" src="imgs/tema3/idegenerering.webp" alt="screenshot of ideas" />
+          </button>
+          <p class="zoom-info">Click the images to zoom</p>
+        </div>
+        <div class="tema-frame">
+          <div class="tema-txt">
+            <h2>Formål</h2>
+            <p>Formålet var at erstatte mavefornemmelser med reelle brugerindsigter gennem en iterativ produktudvikling. Hovedopgaven var at designe og kode et individuelt emnesite, med et selvvalgt emne og et klart brugerformål. Forløbet trænede os i at formidle og dokumentere hele designprocessen fra idé til færdigt produkt.</p>
+            <p>Arbejdsprocessen var opdelt i 5 faser, hvor designvalg løbende blev kvalificeret gennem empirisk data og systematiske brugertests.</p>
           </div>
         </div>
       </section>
 
       <section class="reflektioner tema-sektion">
-        <div class="grid desktop_4-2-1-2 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
-          <div class="tema-frame-inverted">
-            <div class="tema-txt">
-              <h2>Reflektioner</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-            </div>
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1 btn-border" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img1" src="imgs/tema3/kodedokumentation.webp" alt="screenshot of code dokumentation" />
+          </button>
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img2" src="imgs/tema3/styletile.webp" alt="screenshot of slideshow feature" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img3" src="imgs/tema3/toomuch.webp" alt="screenshot of accordions" />
+          </button>
+          <p class="zoom-info">Click the images to zoom</p>
+        </div>
+        <div class="tema-frame-inverted">
+          <div class="tema-txt">
+            <h2>Process</h2>
+            <p>Jeg startede originalt med et andet emne, men en snak med en klassekammerat fik mig til at indse at jeg havde mere energi på mit Lemur emne.</p>
+            <p>Jeg havde måske lidt for meget energi på det, da jeg endte med noget af en overflod af accordions for at få plads til mine 8000 lemur billeder. Less is More? Apparently I never heard of that.</p>
+            <p>På trods af mine dårlige beslutninger, lærte jeg dog utrolig meget, som f.eks. at jeg ikke skal bruge 8 timer på at få pilene i mit slideshow til at sidde 100% i midten.</p>
           </div>
         </div>
       </section>
 
       <section class="resultat tema-sektion">
-        <div class="grid desktop_2-1-2-4 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
-          <div class="tema-frame">
-            <div class="tema-txt">
-              <h2>Resultat</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-              <p>Du kan se mit website her <a class="tema-link2" href="https://certifiedrat.github.io/emnesite_hvilken_lemur_er_du/">Hvilken Lemur er du?</a></p>
-            </div>
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img1" src="imgs/tema3/menu.webp" alt="mobile menu design" />
+          </button>
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img2" src="imgs/tema3/drawing.webp" alt="lemur drawing" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img3" src="imgs/tema3/result.webp" alt="screenshots of all pages" />
+          </button>
+          <p class="zoom-info">Click the images to zoom</p>
+          <div id="imgpopup" popover>
+            <button popovertarget="imgpopup" popovertargetaction="hide" class="close-popover" aria-label="Close Window">&times;</button>
+            <img id="imgpopover" src="img" alt="Image enlarged" />
+          </div>
+        </div>
+        <div class="tema-frame">
+          <div class="tema-txt">
+            <h2>Resultat</h2>
+            <p>Jeg ville ønske jeg kunne lave dette tema igen, da der var så meget jeg lærte undervejs som jeg kunne implementere fra start. Mit site levede op til minimumskravene, men hele min process og dokumentation deraf var meget mangelfuld.</p>
+            <p>Udover nogle personlige omstændigheder ligger den største fejl ved at jeg endte med at bruge størstedelen tiden på at nørde (ikke obligatorisk) kode og Figma komponenter. Det gik meget ud over det egentlige UI/UX emne, men <strong>især</strong> hele formålet med sitet - Lemur testen!?</p>
+            <p>Billeder af Lemurer er der til gengæld nok af, takket være <a class="tema-link" href="https://lemur.duke.edu/">Duke Lemur Center</a></p>
+
+            <p>Du kan se websitet her <a class="btn-design" href="https://certifiedrat.github.io/emnesite_hvilken_lemur_er_du/">Hvilken Lemur er du?</a></p>
           </div>
         </div>
       </section>

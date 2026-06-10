@@ -38,7 +38,6 @@
                 <a href="tema3.html">Tema 3</a>
                 <a href="tema4.html">Tema 4</a>
                 <a href="tema5.html">Tema 5</a>
-                <a href="tema6.html">Tema 6</a>
               </div>
             </div>
           </li>
@@ -51,6 +50,8 @@
       </nav>
     </header>
 
+    <canvas id="canvas"></canvas>
+    <div class="background"></div>
     <main>
       <div class="tema-slide">
         <a href="tema6.html" class="prev-tema">&#10094;</a>
@@ -59,53 +60,76 @@
       </div>
       <div class="intro">
         <h2>Grund&shy;læggende Web</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate reprehenderit repellendus sint dolor nulla iusto, obcaecati illum necessitatibus soluta harum quia ducimus doloribus laudantium, earum velit quis nisi dolores? Perferendis nesciunt nulla doloremque excepturi, nam sequi incidunt consequuntur, dolorum minima, cum fugit dolorem id nisi perspiciatis explicabo ipsa vel!</p>
+        <p>I dette tema blev vi over tre uger introduceret til hvordan man laver en website helt fra bunden - ved at gøre det i praksis.</p>
         <p>Er du ikke interesseret i en gennemgang af temaet, kan du gå direkte til mit færdige website <a href="" class="tema-link">her</a></p>
       </div>
       <section class="process tema-sektion">
-        <div class="grid desktop_2-1-2-4 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
-          <div class="tema-frame">
-            <div class="tema-txt">
-              <h2>Processen</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-            </div>
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img1" src="imgs/tema2/for2.webp" alt="Comparison of mobilewidth and desktopwidth" />
+          </button>
+          <button class="tema-img-btn img-2" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img2" src="imgs/tema2/for1.webp" alt="visitkort" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img3" src="imgs/tema2/for3.webp" alt="my computer" />
+          </button>
+          <p class="zoom-info">Click the images to zoom</p>
+        </div>
+        <div class="tema-frame">
+          <div class="tema-txt">
+            <h2>Formål</h2>
+            <p>Vi blev grundigt introducerede til to af de kode sprog vi kommer til at bruge mest på uddannelsen: HTML (HyperText Markup Language) og CSS (Cascading Style Sheets). Til det bruger vi VS Code, som er en kode-editor, hvor du via en live-server kan se din kode tage form. Gennem temaet lærte vi basal HTML syntax som derefter skulle styles vha. CSS egenskaber som grid, flex og media queries. Vi arbejdede ud fra et “mobile-first” princip, hvor man koder websitets layout i mobil bredde først, og derefter tilpasser layoutet til bredere skærme.</p>
+            <p>Sideløbende blev vi også introduceret til designprogrammet Figma, hvor vi arbejdede med at opsætte tekst, billeder og grafik. Her blev vi undervist i og at navigere efter designkonventioner, gestaltlove og wireframes, samt en gennemgang af optimering af filformater, billedbehandling og basal ophavsret.</p>
           </div>
         </div>
       </section>
 
       <section class="reflektioner tema-sektion">
-        <div class="grid desktop_4-2-1-2 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
-          <div class="tema-frame-inverted">
-            <div class="tema-txt">
-              <h2>Reflektioner</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-            </div>
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img1" src="imgs/tema2/pro2.webp" alt="screenshot of figjam board" />
+          </button>
+          <button class="tema-img-btn img-2" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img2" src="imgs/tema2/pro.webp" alt="figma logo" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img3" src="imgs/tema2/pro3.webp" alt="screenshot of vsCode" />
+          </button>
+          <p class="zoom-info">Click the images to zoom</p>
+        </div>
+        <div class="tema-frame-inverted">
+          <div class="tema-txt">
+            <h2>Process</h2>
+            <p>Afleveringsopgaven for temaet var at udarbejde et responsivt website, på basis af de udleverede materialer. Indledningsvist var vores opgave at kode et mobilsite der skulle følge de udleverede wireframes samt layoutdiagrammer. Med det menes at sidens indhold og dens visuelle struktur var forudbestemt.</p>
+            <p>Derudover skulle vi selv vælge typografi og farver, ud fra vores undervisning i design. Eksempelvis fik vi en øvelse i Figma hvor vi skulle lave et “visitkort” I Figma, som skulle fortælle lidt om os selv, både på skrift og i udtryk.</p>
           </div>
         </div>
       </section>
 
       <section class="resultat tema-sektion">
-        <div class="grid desktop_2-1-2-4 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
-          <div class="tema-frame">
-            <div class="tema-txt">
-              <h2>Resultat</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
-              <p>Du kan se mit website her: <a class="tema-link2" href="https://certifiedrat.github.io/02.01.02website/">02.01.02website</a></p>
-            </div>
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img1" src="imgs/tema2/res3.webp" alt="desktop width and mobile width" />
+          </button>
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img2" src="imgs/tema2/res2.webp" alt="layoutdiagram og lo-fi wireframe" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
+            <img class="tema-img img3" src="imgs/tema2/res1.webp" alt="Typografi stil valg" />
+          </button>
+          <p class="zoom-info">Click the images to zoom</p>
+          <div id="imgpopup" popover>
+            <button popovertarget="imgpopup" popovertargetaction="hide" class="close-popover" aria-label="Close Window">&times;</button>
+            <img id="imgpopover" src="img" alt="Image enlarged" />
+          </div>
+        </div>
+        <div class="tema-frame">
+          <div class="tema-txt">
+            <h2>Resultat</h2>
+            <p>Til mit design af websitet valgte jeg en pixeleret kode inspireret stil, med farverne og indrykningen fra vsCode, da det virkede passende for temaet.</p>
+            <p>Afslutningsvist fik vi vores studiestartsprøve, som var det samme site, men nu tilpasset til også at virke i dekstop format, så det blev et responsivt website. Vi blev bedømt med bestået/ikke bestået, med mulighed for at prøve igen skulle man ikke bestå - jeg bestod heldigvis i første omgang.</p>
+            <p>Du kan se websitet her <a class="btn-design" href="https://certifiedrat.github.io/02.01.02website/">02.01.02.website</a></p>
           </div>
         </div>
       </section>
@@ -131,7 +155,7 @@
         <p class="name">L4u_R4_T 🟄 2026</p>
       </div>
     </footer>
-    <script src="../js/generel.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="js/generel.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

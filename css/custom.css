@@ -16,30 +16,29 @@
 }
 :root {
   /********************************* Colors ************************************************/
-  --color-text: #e4e4e4;
-  --color-text-grey: #b1b1b1;
+  --color-text: rgb(226, 224, 218);
+  --color-text-grey: rgba(204, 203, 194, 0.75);
   --color-text-inverted: rgba(29, 27, 27, 1);
+
+  --bg-color: var(--dark);
 
   --white: rgba(228, 228, 228, 1);
   --yellow: rgb(219, 162, 55);
-  --windowframe: rgba(56, 37, 29, 1);
-  --windowlining: rgb(46, 24, 24);
-  --windowlining-light: rgb(124, 93, 46);
-  --dark: rgba(29, 27, 27, 1);
+  --windowframe: #08090a;
+  --dark: rgba(6, 8, 8, 1);
 
   --white10: rgba(228, 228, 228, 0.1);
   --white05: rgba(228, 228, 228, 0.05);
 
-  /************ Windowframes ***********************************************/
-  --windowborder-L: 10px solid var(--windowframe);
-  --windowborder-inner-L: 6px solid var(--windowlining);
+  --img-bg: rgba(6, 8, 8, 0.65);
 
-  --windowborder-S: 6px solid var(--windowframe);
-  --windowborder-inner-S: 4px solid var(--windowlining);
+  /************ Windowframes ***********************************************/
+  --windowborder: 6px solid var(--windowframe);
+  --windowoutline: 3px solid var(--windowframe);
 
   /**************************************Fonts********************************************/
   --h1: cyber;
-  --h2h3: regulartxt;
+  --h2h3: subheaders;
   --p: regulartxt;
   --logo: barcode;
 

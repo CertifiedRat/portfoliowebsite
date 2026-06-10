@@ -51,6 +51,9 @@
       </nav>
     </header>
 
+    <canvas id="canvas"></canvas>
+    <div class="background"></div>
+
     <main>
       <div class="tema-slide">
         <a href="tema5.html" class="prev-tema">&#10094;</a>
@@ -62,13 +65,20 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate reprehenderit repellendus sint dolor nulla iusto, obcaecati illum necessitatibus soluta harum quia ducimus doloribus laudantium, earum velit quis nisi dolores? Perferendis nesciunt nulla doloremque excepturi, nam sequi incidunt consequuntur, dolorum minima, cum fugit dolorem id nisi perspiciatis explicabo ipsa vel!</p>
       </div>
       <section class="process tema-sektion">
-        <div class="grid desktop_2-1-2-4 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
+        <div class="grid desktop_5-4 lining_mobil">
+          <button class="tema-img-btn img-1" popovertarget="imgpopup">
+            <img class="tema-img img1" src="imgs/" alt="" />
+          </button>
+          <button class="tema-img-btn img-2" popovertarget="imgpopup">
+            <img class="tema-img img2" src="imgs/" alt="" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup">
+            <img class="tema-img img3" src="imgs/" alt="" />
+          </button>
+
           <div class="tema-frame">
             <div class="tema-txt">
-              <h2>Processen</h2>
+              <h2>Formål</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
@@ -78,13 +88,19 @@
       </section>
 
       <section class="reflektioner tema-sektion">
-        <div class="grid desktop_4-2-1-2 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
+        <div class="grid desktop_4-5 lining_mobil">
+          <button class="tema-img-btn img-1" popovertarget="imgpopup">
+            <img class="tema-img img1" src="imgs/" alt="" />
+          </button>
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup">
+            <img class="tema-img img2" src="imgs/" alt="" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup">
+            <img class="tema-img img3" src="imgs/" alt="" />
+          </button>
           <div class="tema-frame-inverted">
             <div class="tema-txt">
-              <h2>Reflektioner</h2>
+              <h2>Process</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem assumenda, maiores natus magni, vero sunt saepe a quis repellat ipsam optio! Ab, eius voluptatibus.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil sit omnis atque, placeat quo vero rerum cupiditate dolorem illo fugiat itaque iure harum dignissimos optio error qui veritatis ratione?</p>
@@ -94,10 +110,21 @@
       </section>
 
       <section class="resultat tema-sektion">
-        <div class="grid desktop_2-1-2-4 lining_mobil">
-          <img class="tema-img img-1" src="imgs/16-9.jpg" class="img1" alt="" />
-          <img class="tema-img img-2" src="imgs/9-16.jpg" class="img2" alt="" />
-          <img class="tema-img img-3" src="imgs/1-1.webp" class="img3" alt="" />
+        <div class="grid desktop_5-4 lining_mobil">
+          <button class="tema-img-btn img-1" popovertarget="imgpopup">
+            <img class="tema-img img1" src="imgs/" alt="" />
+          </button>
+          <button class="tema-img-btn img-2" popovertarget="imgpopup">
+            <img class="tema-img img2" src="imgs/" alt="" />
+          </button>
+          <button class="tema-img-btn img-3" popovertarget="imgpopup">
+            <img class="tema-img img3" src="imgs/" alt="" />
+          </button>
+
+          <div id="imgpopup" popover>
+            <button popovertarget="imgpopup" popovertargetaction="hide" class="close-popover">&times;</button>
+            <img id="imgpopover" src="" alt="Image enlarged" />
+          </div>
           <div class="tema-frame">
             <div class="tema-txt">
               <h2>Resultat</h2>
