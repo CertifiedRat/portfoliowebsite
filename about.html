@@ -37,7 +37,6 @@
                 <a href="tema3.html">Tema 3</a>
                 <a href="tema4.html">Tema 4</a>
                 <a href="tema5.html">Tema 5</a>
-                <a href="tema6.html">Tema 6</a>
               </div>
             </div>
           </li>
@@ -50,14 +49,19 @@
       </nav>
     </header>
 
+    <canvas id="canvas"></canvas>
+    <div class="background"></div>
     <main>
       <h1>About</h1>
       <section class="aboutme">
-        <div class="lining_mobil desktop_1-1">
-          <div class="lining_desktop">
+        <div class="desktop_1-1">
+          <div class="txt-bg ptop">
             <h2>Lau_R4_T?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum recusandae fugiat quia atque, minus ipsum repellat cumque ut autem?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, doloribus temporibus dolores molestias quos omnis velit numquam debitis fugiat repellendus nam assumenda nihil obcaecati nulla amet libero? Placeat earum sint omnis voluptatibus sapiente doloribus asperiores provident ab cupiditate beatae?</p>
+            <p>Mit navn er Laura, og jeg er i skrivende stund 97% færdig med mit første semester på KEA's multimediedesigner uddannelse.</p>
+            <p>Det mest sindsoprivende ved uddannelsen er, at jeg er blevet en kæmpe stræber. Jeg har aldrig i mit liv været en duks - da de fleste skolefag har ikke vagt synderlig interesse. Efter jeg er startet på KEA, skal love for at der er kommet nye boller på suppen.</p>
+            <p>Hver dag glæder jeg mig til at vi har fri, så jeg kan gå hjem og tillære mig endnu mere viden om det vi har lært. Jeg har virkelig fundet min niche. Multimediedesigner føles for mig som hvis Sudoku og Tegning fik et barn, to ting jeg ikke vidste kunne kombineres.</p>
+            <p>Moving on. Jeg har boet i Viborg de sidste 7-8 år, da jeg startede på Visuel HF i 2017, og blev hængende efterfølgende. Visuel HF er en 3-årig HF, hvor der er tillagt et år på The Animation Workshop, hvilket var grunden til at jeg tog den, da jeg har tegnet så længe jeg kan huske.</p>
+            <p>Nårh ja.. R4_T? Lau_ra_T(agholm) - Rat - det er mit "tag", mit kunstnernavn, soulanimal, something something. Jeg husker ikke engang hvor det startede. Stregkoden var bare sej.</p>
           </div>
           <div class="grid_3-1-2 lining_desktop">
             <img class="img-bg" src="imgs/drawings/selfportrait.webp" alt="self portrait" />
@@ -65,8 +69,8 @@
           </div>
         </div>
       </section>
-      <section class="artwork">
-        <div class="lining">
+      <div class="grid skillswrapper">
+        <section class="artwork">
           <h2 class="art-title">Artwork</h2>
           <div class="slideshow-container">
             <div class="slide-wrapper">
@@ -113,21 +117,17 @@
               <span class="dot" onclick="currentSlide(6)"></span>
             </div>
           </div>
-        </div>
-      </section>
-      <div class="desktop_5-2">
+        </section>
         <section class="skills code">
-          <div class="s-lining">
-            <h2>Code Skills</h2>
-          </div>
-          <div class="flex border-top">
+          <h2>Code Skills</h2>
+          <div class="flex">
             <div class="lining">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="currentColor" d="m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z" />
               </svg>
 
               <h3>HTML</h3>
-              <p>5/10</p>
+              <p>6/10</p>
             </div>
             <div class="lining">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
               </svg>
 
               <h3>CSS</h3>
-              <p>5/10</p>
+              <p>6/10</p>
             </div>
             <div class="lining">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -148,13 +148,11 @@
         </section>
 
         <section class="skills software">
-          <div class="s-lining">
-            <h2>Software Skills</h2>
-          </div>
-          <div class="grid_1-1 border-top">
+          <h2>Software Skills</h2>
+          <div class="grid_1-1">
             <div class="lining">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Frame 48">
+                <g id="Frame48">
                   <g id="Subtract">
                     <path d="M18.8319 5.9955C18.8511 6.24373 18.8622 6.52632 18.8543 6.83058C18.7897 8.14102 18.3734 9.36065 17.6172 10.4557C16.4112 11.9335 14.4839 12.5514 12.6629 12.839C11.373 13.0428 10.1266 13.1847 8.94224 13.7786C8.02582 14.2381 7.18983 14.8746 6.55086 15.6795C5.92095 16.3768 5.47961 17.2321 5.21207 18.1299C5.37627 16.7724 5.92434 15.4653 6.76121 14.3855C7.96185 12.8362 9.66037 11.9845 11.5129 11.4588C13.4873 10.8986 15.6873 10.6505 17.2466 9.18519C18.1383 8.34718 18.698 7.20948 18.8319 5.9955Z" fill="#323232" />
                     <path d="M14.2095 9.92884C13.2166 10.4469 12.1838 10.8875 11.1819 11.3883C9.51761 11.8877 7.98202 12.6834 6.84569 14.0259C6.19017 14.8032 5.6647 15.7194 5.36466 16.694C5.59212 15.6604 6.09039 14.2917 7.18103 13.1403L7.40776 12.913L7.75172 12.6013C8.57 11.9009 9.49209 11.3895 10.5328 11.0635C11.7602 10.679 13.0134 10.4141 14.2095 9.92884Z" fill="#323232" />
@@ -201,20 +199,20 @@
           </div>
         </section>
         <section class="useless skills">
-          <div class="lining">
-            <h2 class="sudoku">Useless Skill</h2>
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg fill="currentColor" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+          <h2 class="sudoku">Useless Skill</h2>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor">
               <path d="M4 6.63A2.63 2.63 0 0 1 6.63 4h12.493v15.123H4V6.63zM20.438 4h15.123v15.123H20.438V4zm16.439 16.438H52v15.123H36.877V20.438zM20.438 36.877h15.123V52H20.438V36.877zm16.439 0H52V49.37A2.63 2.63 0 0 1 49.37 52H36.877V36.877z" />
               <path d="M19.123 52H6.63A2.63 2.63 0 0 1 4 49.37V36.877h15.123V52zm-8.287-13.445c-.074.273-.245.51-.513.71a3.16 3.16 0 0 1-.955.458c-.368.111-.744.166-1.128.166s-.729-.061-1.034-.182v2.486c.352.116.705.173 1.058.173s.686-.06 1.002-.181a2.31 2.31 0 0 0 .844-.552 2.58 2.58 0 0 0 .576-.955l-.182.836c-.053.321-.078.739-.078 1.255l-.012 5.137H7.766v2.122h7.646v-2.122h-2.391v-9.351h-2.185zM49.37 4A2.63 2.63 0 0 1 52 6.63v12.493H36.877V4H49.37zm-6.391 1.678l-3.235 9.784h5.338l-.005 1.689h2.288v-1.689h1.444l.008-2.13h-1.452V9.931l-2.288.04.008 2.036.023.592a1.13 1.13 0 0 0 .174.521c.1.142.268.213.505.213H42.86l.245-.434 2.723-7.22h-2.849z" fill-rule="evenodd" />
               <path d="M11.238 24.152c.416 0 .76.102 1.034.308s.478.479.615.821.205.72.205 1.136l-.008.505c-.005.226-.029.392-.071.497-.132.142-.287.263-.466.363a2.18 2.18 0 0 1-.607.229c-.232.053-.495.079-.789.079-.516 0-.926-.176-1.231-.529-.305-.358-.458-.866-.458-1.523a2.19 2.19 0 0 1 .198-.931c.131-.289.326-.521.584-.694.263-.174.594-.26.994-.26z" />
-              <path d="M19.123 35.562H4V20.438h15.123v15.123zm-7.901-13.619c-.573 0-1.116.1-1.626.3-.505.195-.952.476-1.341.844a3.89 3.89 0 0 0-.915 1.302c-.221.5-.331 1.055-.331 1.665 0 .857.15 1.573.449 2.146s.705 1.005 1.216 1.294c.51.284 1.078.426 1.704.426.5 0 .913-.084 1.239-.252.331-.168.599-.379.805-.631s.364-.505.474-.758l.164-.373c-.04.38-.146.765-.322 1.154a7.49 7.49 0 0 1-.837 1.404c-.337.452-.702.881-1.097 1.286L9.66 32.824l-.955.765h3.329c.279-.184.611-.484.995-.9.389-.421.77-.931 1.144-1.531.379-.605.692-1.278.939-2.02.252-.742.378-1.526.378-2.351 0-1.047-.189-1.928-.568-2.644-.373-.721-.884-1.268-1.531-1.641-.642-.373-1.365-.56-2.17-.56z" fill-rule="evenodd" />
+              <path fill-rule="evenodd" d="M19.123 35.562H4V20.438h15.123v15.123zm-7.901-13.619c-.573 0-1.116.1-1.626.3-.505.195-.952.476-1.341.844a3.89 3.89 0 0 0-.915 1.302c-.221.5-.331 1.055-.331 1.665 0 .857.15 1.573.449 2.146s.705 1.005 1.216 1.294c.51.284 1.078.426 1.704.426.5 0 .913-.084 1.239-.252.331-.168.599-.379.805-.631s.364-.505.474-.758l.164-.373c-.04.38-.146.765-.322 1.154a7.49 7.49 0 0 1-.837 1.404c-.337.452-.702.881-1.097 1.286L9.66 32.824l-.955.765h3.329c.279-.184.611-.484.995-.9.389-.421.77-.931 1.144-1.531.379-.605.692-1.278.939-2.02.252-.742.378-1.526.378-2.351 0-1.047-.189-1.928-.568-2.644-.373-.721-.884-1.268-1.531-1.641-.642-.373-1.365-.56-2.17-.56z" />
               <path d="M27.811 28.665c.547 0 1 .122 1.357.364s.536.626.536 1.152c0 .489-.19.855-.568 1.097-.373.237-.815.355-1.325.355-.521 0-.97-.119-1.349-.355-.373-.242-.561-.608-.561-1.097 0-.537.179-.924.537-1.16s.821-.355 1.373-.355zm0-4.694c.431 0 .789.113 1.073.339s.426.558.426 1.01c0 .221-.053.437-.158.647a1.25 1.25 0 0 1-.489.505c-.221.132-.505.197-.852.197-.358 0-.65-.066-.876-.197a1.25 1.25 0 0 1-.489-.505 1.46 1.46 0 0 1-.15-.647c0-.452.139-.789.418-1.01s.645-.339 1.097-.339z" />
-              <path d="M35.562 35.562H20.438V20.438h15.123v15.123zM27.811 21.88c-1.262 0-2.212.287-2.849.86-.636.568-.955 1.336-.955 2.304 0 .4.09.784.268 1.152.184.363.445.673.781.931.337.252.734.416 1.191.489-.784.068-1.425.34-1.925.813-.494.468-.742 1.157-.742 2.067 0 .7.187 1.294.56 1.783.373.484.878.853 1.515 1.105.642.252 1.36.378 2.154.378.789 0 1.502-.126 2.138-.378s1.141-.621 1.515-1.105c.373-.489.561-1.084.561-1.783 0-.878-.242-1.559-.726-2.043s-1.125-.758-1.925-.821c.447-.074.837-.237 1.168-.489.337-.258.597-.568.781-.931a2.58 2.58 0 0 0 .276-1.168c0-.957-.315-1.723-.947-2.296-.631-.579-1.578-.867-2.841-.867z" fill-rule="evenodd" />
+              <path fill-rule="evenodd" d="M35.562 35.562H20.438V20.438h15.123v15.123zM27.811 21.88c-1.262 0-2.212.287-2.849.86-.636.568-.955 1.336-.955 2.304 0 .4.09.784.268 1.152.184.363.445.673.781.931.337.252.734.416 1.191.489-.784.068-1.425.34-1.925.813-.494.468-.742 1.157-.742 2.067 0 .7.187 1.294.56 1.783.373.484.878.853 1.515 1.105.642.252 1.36.378 2.154.378.789 0 1.502-.126 2.138-.378s1.141-.621 1.515-1.105c.373-.489.561-1.084.561-1.783 0-.878-.242-1.559-.726-2.043s-1.125-.758-1.925-.821c.447-.074.837-.237 1.168-.489.337-.258.597-.568.781-.931a2.58 2.58 0 0 0 .276-1.168c0-.957-.315-1.723-.947-2.296-.631-.579-1.578-.867-2.841-.867z" />
             </svg>
-            <h3>Sudoku</h3>
-            <p>10/10</p>
           </div>
+
+          <h3>Sudoku</h3>
+          <p class="yellow">10/10</p>
         </section>
       </div>
     </main>

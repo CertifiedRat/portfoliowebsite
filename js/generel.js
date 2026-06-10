@@ -54,3 +54,56 @@ popup?.addEventListener("beforetoggle", function (event) {
 // beforetoggle = somewhere between click and popover??
 // bedre forståelse af at bruge if - betingelser/forudsætning for at kunne gå videre til næste skridt/aktion.
 //kilder: https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using
+
+//Rain Effect
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let rain = [];
+
+/* ===== RAIN ===== */
+for (let i = 0; i < 300; i++) {
+  rain.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    length: Math.random() * 10,
+    speed: Math.random() * 2 + 4,
+  });
+}
+
+/* ===== DRAW LOOP ===== */
+function animate() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  /* RAIN */
+  ctx.strokeStyle = "rgba(209, 209, 209, 0.9)";
+  ctx.lineWidth = 1;
+
+  rain.forEach((r) => {
+    ctx.beginPath();
+    ctx.moveTo(r.x, r.y);
+    ctx.lineTo(r.x - 2, r.y + r.length);
+    ctx.stroke();
+
+    r.y += r.speed;
+    if (r.y > canvas.height) {
+      r.y = -60;
+      r.x = Math.random() * canvas.width;
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+/* ===== RESIZE ===== */
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+//Source: https://codepen.io/editor/ebcsyglobal/pen/019d639f-c97c-764e-b250-a8df6dfab3ae

@@ -15,23 +15,10 @@
 }
 /* index */
 .indexhero {
-  height: 70vh;
-  align-content: center;
+  margin-block: 150px;
+  z-index: 2;
 }
-.grid_1-min-1 {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
 
-  span.vertical {
-    grid-column: 2/3;
-  }
-  span.horizontal {
-    grid-column: 1/4;
-  }
-  img {
-    padding: 0.5rem;
-  }
-}
 /* about */
 .grid_3-1-2 {
   display: grid;
@@ -54,45 +41,14 @@
 .skills .flex * {
   width: 100%;
 }
-.desktop_5-2 {
-  display: grid;
-  gap: 1rem;
-}
 /* project page */
 .tema-slide {
-  display: grid;
-  grid-template-columns: minmax(1rem, 3rem) 1fr minmax(1rem, 3rem);
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: space-between;
 }
-.img-2,
-.img-3 {
-  order: 1;
-}
+
 /***************** Desktop 800+ *********************************************************************/
 @media screen and (min-width: 800px) {
-  section,
-  .tema-frame,
-  .tema-frame-inverted {
-    border: var(--windowborder-L);
-    border-block-width: 1.5rem;
-  }
-  .lining,
-  .lining_desktop,
-  .tema-txt {
-    border: var(--windowborder-inner-L);
-    border-bottom-color: var(--windowlining-light);
-    border-right-color: var(--windowlining-light);
-    border-bottom-width: 10px;
-  }
-  .lining_mobil {
-    border: none;
-  }
-  .border-bottom {
-    border-bottom: var(--windowborder-L);
-  }
-  .border-top {
-    border-top: var(--windowborder-L);
-  }
   .desktop_span2 {
     grid-column: span 2;
   }
@@ -100,35 +56,27 @@
   .desktop_flex {
     grid-template-columns: repeat(4, 1fr);
   }
+  h2.index {
+    margin-top: 2rem;
+  }
   /* aboutme */
   .desktop_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .desktop_5-2 {
-    grid-template-columns: 5fr 2fr;
-    grid-template-rows: max-content;
-  }
 
-  section.useless {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    .lining {
-      align-content: center;
-      height: 100%;
-    }
-  }
   section.skills {
     svg {
       max-width: 4rem;
     }
   }
   section.software {
-    grid-column: span 2;
     .grid_1-1 {
       grid-template-columns: repeat(4, 1fr);
       border-bottom: 0;
-      grid-column: 1/3;
     }
+  }
+  h2.bigger {
+    font-size: 40px;
   }
 }

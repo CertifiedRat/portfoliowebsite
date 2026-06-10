@@ -38,7 +38,6 @@
                 <a id="visiting" href="tema3.html">Tema 3</a>
                 <a href="tema4.html">Tema 4</a>
                 <a href="tema5.html">Tema 5</a>
-                <a href="tema6.html">Tema 6</a>
               </div>
             </div>
           </li>
@@ -51,6 +50,8 @@
       </nav>
     </header>
 
+    <canvas id="canvas"></canvas>
+    <div class="background"></div>
     <main>
       <div class="tema-slide">
         <a href="tema2.html" class="prev-tema">&#10094;</a>
@@ -63,91 +64,75 @@
         <p>Er du ikke interesseret i en gennemgang af temaet, kan du gå direkte til mit færdige website <a href="https://certifiedrat.github.io/emnesite_hvilken_lemur_er_du/" class="tema-link">her</a></p>
       </div>
       <section class="process tema-sektion">
-        <div id="tema3_1" class="grid desktop_5-4 lining_mobil">
-          <button class="tema-img-btn img-1 m20" popovertarget="imgpopup">
+        <div id="tema3_1" class="grid_5fr">
+          <button class="tema-img-btn img-1 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img1" src="imgs/tema3/moodboard.webp" alt="moodboard" />
           </button>
-          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup">
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img2" src="imgs/tema3/mail.webp" alt="mail screenshot" />
           </button>
-          <button class="tema-img-btn img-3 btn-border" popovertarget="imgpopup">
+          <button class="tema-img-btn img-3 btn-border" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img3" src="imgs/tema3/idegenerering.webp" alt="screenshot of ideas" />
           </button>
-          <div class="tema-frame">
-            <div class="tema-txt">
-              <h2>Formål</h2>
-              <p>Formålet var at erstatte mavefornemmelser med reelle brugerindsigter gennem en iterativ produktudvikling. Hovedopgaven var at designe og kode et individuelt emnesite, med et selvvalgt emne og et klart brugerformål. Forløbet trænede os i at formidle og dokumentere hele designprocessen fra idé til færdigt produkt.</p>
-              <p>Arbejdsprocessen var opdelt i 5 faser, hvor designvalg løbende blev kvalificeret gennem empirisk data og systematiske brugertests.</p>
-            </div>
+          <p class="zoom-info">Click the images to zoom</p>
+        </div>
+        <div class="tema-frame">
+          <div class="tema-txt">
+            <h2>Formål</h2>
+            <p>Formålet var at erstatte mavefornemmelser med reelle brugerindsigter gennem en iterativ produktudvikling. Hovedopgaven var at designe og kode et individuelt emnesite, med et selvvalgt emne og et klart brugerformål. Forløbet trænede os i at formidle og dokumentere hele designprocessen fra idé til færdigt produkt.</p>
+            <p>Arbejdsprocessen var opdelt i 5 faser, hvor designvalg løbende blev kvalificeret gennem empirisk data og systematiske brugertests.</p>
           </div>
         </div>
       </section>
 
       <section class="reflektioner tema-sektion">
-        <div class="grid desktop_4-5 lining_mobil">
-          <button class="tema-img-btn img-1 btn-border" popovertarget="imgpopup">
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1 btn-border" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img1" src="imgs/tema3/kodedokumentation.webp" alt="screenshot of code dokumentation" />
           </button>
-          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup">
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img2" src="imgs/tema3/styletile.webp" alt="screenshot of slideshow feature" />
           </button>
-          <button class="tema-img-btn img-3" popovertarget="imgpopup">
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img3" src="imgs/tema3/toomuch.webp" alt="screenshot of accordions" />
           </button>
-          <div class="tema-frame-inverted">
-            <div class="tema-txt">
-              <h2>Process</h2>
-              <ul class="tema-punkter">
-                <li>
-                  <p><strong>&#8226; Research og idé:</strong> Forstudier af emnet, indholdstilrettelæggelse og etablering af et netværk af testpersoner. Processen startede med idéudvikling, udarbejdelse af moodboard og de første rå wireframes.</p>
-                </li>
-                <li>
-                  <p><strong>&#8226; Digital prototype:</strong> Visuel research af UI-konventioner for interaktive platforme samt udarbejdelse af et fastlagt Styletile (farver, typografi og UI-elementer). Herudfra skulle vi bygge en klikbar high-fidelity prototype i Figma, til både mobil og desktop.</p>
-                </li>
-                <li>
-                  <p><strong>&#8226; Brugertest:</strong> For at optimere usability og brugeroplevelsen skulle prototypen testes på reelle brugere i målgruppen via Tænke-højt tests og 5-second tests.</p>
-                </li>
-                <li>
-                  <p><strong>&#8226; Dokumentation:</strong> Hele processen, de indsigtsdrevne iterationer og personlige refleksioner skulle løbende dokumenteres i en logbog, samt via Figma og FigJam.</p>
-                </li>
-                <li>
-                  <p><strong>&#8226; Website:</strong> Den endelige løsning skulle så laves ud fra den digitale Figma-prototype til et fuldt funktionelt, responsivt website kodet i HTML og CSS.</p>
-                </li>
-              </ul>
-            </div>
+          <p class="zoom-info">Click the images to zoom</p>
+        </div>
+        <div class="tema-frame-inverted">
+          <div class="tema-txt">
+            <h2>Process</h2>
+            <p>Jeg startede originalt med et andet emne, men en snak med en klassekammerat fik mig til at indse at jeg havde mere energi på mit Lemur emne.</p>
+            <p>Jeg havde måske lidt for meget energi på det, da jeg endte med noget af en overflod af accordions for at få plads til mine 8000 lemur billeder. Less is More? Apparently I never heard of that.</p>
+            <p>På trods af mine dårlige beslutninger, lærte jeg dog utrolig meget, som f.eks. at jeg ikke skal bruge 8 timer på at få pilene i mit slideshow til at sidde 100% i midten.</p>
           </div>
         </div>
       </section>
 
       <section class="resultat tema-sektion">
-        <div class="grid desktop_5-4 lining_mobil">
-          <button class="tema-img-btn img-1" popovertarget="imgpopup">
+        <div class="grid_5fr">
+          <button class="tema-img-btn img-1" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img1" src="imgs/tema3/menu.webp" alt="mobile menu design" />
           </button>
-          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup">
+          <button class="tema-img-btn img-2 m20" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img2" src="imgs/tema3/drawing.webp" alt="lemur drawing" />
           </button>
-          <button class="tema-img-btn img-3" popovertarget="imgpopup">
+          <button class="tema-img-btn img-3" popovertarget="imgpopup" aria-label="Enlarge Image">
             <img class="tema-img img3" src="imgs/tema3/result.webp" alt="screenshots of all pages" />
           </button>
+          <p class="zoom-info">Click the images to zoom</p>
           <div id="imgpopup" popover>
-            <button popovertarget="imgpopup" popovertargetaction="hide" class="close-popover">&times;</button>
-            <img id="imgpopover" src="" alt="Image enlarged" />
+            <button popovertarget="imgpopup" popovertargetaction="hide" class="close-popover" aria-label="Close Window">&times;</button>
+            <img id="imgpopover" src="img" alt="Image enlarged" />
           </div>
-          <div class="tema-frame">
-            <div class="tema-txt">
-              <h2>Resultat</h2>
-              <p>Jeg ville ønske jeg kunne lave dette tema igen, da der var så meget jeg lærte undervejs som jeg kunne implementere fra start. Mit site levede op til minimumskravene, men hele min process og dokumentation deraf var meget mangelfuld.</p>
-              <p>Udover nogle personlige omstændigheder ligger den største fejl ved at jeg endte med at bruge størstedelen tiden på at nørde (ikke obligatorisk) kode og Figma komponenter. Det gik meget ud over det egentlige UI/UX emne, men <strong>især</strong> hele formålet med sitet - Lemur testen!?</p>
-              <p>Billeder af Lemurer er der til gengæld nok af, takket være <a class="tema-link" href="https://lemur.duke.edu/">Duke Lemur Center</a></p>
+        </div>
+        <div class="tema-frame">
+          <div class="tema-txt">
+            <h2>Resultat</h2>
+            <p>Jeg ville ønske jeg kunne lave dette tema igen, da der var så meget jeg lærte undervejs som jeg kunne implementere fra start. Mit site levede op til minimumskravene, men hele min process og dokumentation deraf var meget mangelfuld.</p>
+            <p>Udover nogle personlige omstændigheder ligger den største fejl ved at jeg endte med at bruge størstedelen tiden på at nørde (ikke obligatorisk) kode og Figma komponenter. Det gik meget ud over det egentlige UI/UX emne, men <strong>især</strong> hele formålet med sitet - Lemur testen!?</p>
+            <p>Billeder af Lemurer er der til gengæld nok af, takket være <a class="tema-link" href="https://lemur.duke.edu/">Duke Lemur Center</a></p>
 
-              <p class="yellow">Du kan se websitet <a class="tema-link2" href="https://certifiedrat.github.io/emnesite_hvilken_lemur_er_du/">Hvilken Lemur er du?</a></p>
-              <div class="figma grid">
-                <p>Process Dokumentation:</p>
-                <a class="tema-link" href="https://www.figma.com/board/2CMjiaI3k5pnaAsafMl0AQ/Emnesite-dokumentation?node-id=72-14&t=Ps0XlZ8tN7HY92vX-1">FigJam</a>
-                <a class="tema-link" href="https://www.figma.com/design/6ZPm9LMrQ3yjAZ64fP0sDj/Hi-Fi-Wireframe?node-id=0-1&t=zAjI1rLu5yy8naVt-1">Figma</a>
-              </div>
-            </div>
+            <p>Du kan se websitet her <a class="btn-design" href="https://certifiedrat.github.io/emnesite_hvilken_lemur_er_du/">Hvilken Lemur er du?</a></p>
           </div>
         </div>
       </section>

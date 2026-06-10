@@ -1,64 +1,51 @@
+.grid_5fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-self: center;
+}
+.tema-frame-inverted {
+  order: -1;
+  align-self: center;
+}
+.tema-frame {
+  align-self: center;
+}
+.process,
+.resultat,
+.reflektioner {
+  .img-1 {
+    grid-column: 1/4;
+    grid-row: 2/6;
+  }
+  .img-2 {
+    grid-column: 4/6;
+    grid-row: 3/4;
+  }
+  .img-3 {
+    grid-column: 2/6;
+    grid-row: 5/8;
+  }
+}
+
+p.zoom-info {
+  display: block;
+  grid-row: 8/9;
+  grid-column: 1/7;
+  justify-self: end;
+  color: rgb(76 75 89);
+  width: fit-content;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 800px) {
-  .desktop_5-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 24px 4fr;
-  }
-  .desktop_4-5 {
-    display: grid;
-    grid-template-columns: 4fr 24px 1fr 1fr 1fr 1fr 1fr;
-  }
-  .tema-frame {
-    grid-column: 7/8;
-    grid-row: 1/9;
-  }
-  .tema-frame-inverted {
-    order: -1;
-    grid-row: 1/9;
-  }
-  .tema-frame,
-  .tema-frame-inverted {
-    background-image: url(../imgs/windowbg-s.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: min-content;
-    align-self: center;
-  }
   section.tema-sektion {
-    border: none;
-    background: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .tema-img {
     padding: 0;
   }
-  .process,
-  .resultat {
-    .img-1 {
-      grid-column: 1/4;
-      grid-row: 2/6;
-    }
-    .img-2 {
-      grid-column: 4/6;
-      grid-row: 3/4;
-    }
-    .img-3 {
-      grid-column: 2/6;
-      grid-row: 5/8;
-    }
-  }
-  .reflektioner {
-    .img-1 {
-      grid-column: 3/6;
-      grid-row: 2/7;
-    }
-    .img-2 {
-      grid-column: 6/8;
-      grid-row: 2/6;
-    }
-    .img-3 {
-      grid-column: 5/8;
-      grid-row: 5/8;
-    }
-  }
+
   #tema3_1 {
     .img-1 {
       grid-column: 1/4;
@@ -73,22 +60,8 @@
       grid-row: 4/6;
     }
   }
-  #tema5_2 {
-    .img-1 {
-      grid-column: 3/6;
-      grid-row: 3/7;
-    }
-    .img-2 {
-      grid-column: 5/8;
-      grid-row: 2/4;
-    }
-    .img-3 {
-      grid-column: 4/8;
-      grid-row: 6/8;
-    }
-  }
 
-  .m20 {
+  /* .m20 {
     margin: 20px;
   }
   .w200 {
@@ -98,17 +71,8 @@
     grid-column: 4/8;
     grid-row: 6/8;
   }
+  #c1-7 {
+    grid-column: 4/8;
+    grid-row: 7/8;
+  } */
 }
-
-/* .img-1 {
-      grid-column: ;
-      grid-row: ;
-    }
-    .img-2 {
-      grid-column: ;
-      grid-row: ;
-    }
-    .img-3 {
-      grid-column: ;
-      grid-row: ;
-    } */
